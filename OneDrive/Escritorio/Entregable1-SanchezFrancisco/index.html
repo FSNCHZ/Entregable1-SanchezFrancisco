@@ -3,11 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <title>Stockeate</title>
 </head>
 <body>
-    <h1>Gestor de Inventario</h1>
+    <header class="header">
+        <h1 class="title">Stockeate</h1>
+    </header>
+    <main id="main" class="main">
+        <div>
+            <ul>
+                <li>Agregar item</li>
+                <li><button id="btnEliminar">Eliminar item</button></li>
+                <li>Ver inventario</li>
+            </ul>
+        </div>
+        <div class="card">
+            <div>
+                <p>Nombre del producto</p>
+                <input type="text" id="nombreNuevoProducto">
+            </div>
+            <div>
+                <p>Cantidad de producto</p>
+                <input type="text" id="cantidadNuevoProducto">
+            </div>
+            <div>
+                <p>Categoria del producto</p>
+                <input type="text" id="categoriaNuevoProducto">
+            </div>
+            <div>
+                <button id="btnAgregar">Agregar producto</button>
+            </div>
+        </div>
+    </main>
+    <div class="desktop">
+        <p>Esta aplicación solo está disponible en dispositivos moviles.</p>
+    </div>
     <script src="./js/index.js"></script>
 </body>
 </html>
